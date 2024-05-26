@@ -1,0 +1,15 @@
+name: Plugin action
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    types: [opened, edited, reopened]
+  release:
+    types: [published]
+
+jobs:
+  plugin-action:
+    name: CI
+    uses: matmair/inventree-meta-plugin/.github/workflows/plugin_action.yaml@next
+    secrets:
+      PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
