@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inventree-droplet-plugin"
-version = "v0.1.0"
+version = "v0.2.0"
 description = "Surface Droplet info in InvenTree"
 readme = "README.md"
 license = { text = "MIT license" }
